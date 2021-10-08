@@ -78,8 +78,13 @@ public class URLReader {
         }
 
     }
-
-    public static void readURL(String sitetoread) {
+    
+    /**
+     * Method that reads the content of a GET request on another service
+     * @param sitetoread - url of the endpoint
+     * @return the response and content of service
+     */
+    public static String readURL(String sitetoread) {
         try {
             // Crea el objeto que representa una URL2
             URL siteURL = new URL(sitetoread);
@@ -107,14 +112,20 @@ public class URLReader {
 
             System.out.println("-------message-body------");
             BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-
+            StringBuffer response = new StringBuffer();
             String inputLine = null;
             while ((inputLine = reader.readLine()) != null) {
                 System.out.println(inputLine);
+                response.append(inputLine);
             }
-        } catch (IOException x) {
+            reader.close();
+            return response.toString();
+            
+        } 
+        catch (IOException x) {
             System.err.println(x);
         }
+        return "Invalid credentials!";
     }
 }
 
