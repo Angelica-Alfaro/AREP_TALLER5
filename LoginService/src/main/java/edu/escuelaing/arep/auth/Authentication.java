@@ -11,12 +11,13 @@ import edu.escuelaing.arep.data.User;
  */
 public class Authentication {
 
-	private static Map<String, String> users = new HashMap<>();
+	private static Map<String, String> users;
 	
 	/**
 	 * Constructor of authentication
 	 */
 	public Authentication() {
+		users = new HashMap<>();
 		createValidUser();
 	}
 	
@@ -24,7 +25,7 @@ public class Authentication {
 	 * Method that creates a valid user
 	 */
 	private void createValidUser() {
-		String email = "angelica-prueba@gmail.com";
+		String email = "angelica-prueba%40gmail.com";
 		String password = "12345";
 
 		User user = new User(email, password);

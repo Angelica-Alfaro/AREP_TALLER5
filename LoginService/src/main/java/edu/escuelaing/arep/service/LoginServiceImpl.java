@@ -2,6 +2,9 @@ package edu.escuelaing.arep.service;
 
 import spark.Request;
 import spark.Response;
+
+import java.util.ArrayList;
+
 import com.google.gson.Gson;
 
 import edu.escuelaing.arep.auth.Authentication;
@@ -25,14 +28,30 @@ public class LoginServiceImpl {
 	* @return Denial or access to the service
 	*/
 	public String login(Request req, Response res) {
+		ArrayList<String> myParams = getParams(req.body());
+
 		String result = "";
-        User user = gson.fromJson(req.body(), User.class);
+        User user = new User(myParams.get(0), myParams.get(1));
         if(auth.validCredentials(user)) {
         	result = URLReader.readURL(URL);
 		}
         else {
-			result = "Invalid credentials :(";
+			result = "Credenciales inválidas :(";
 		}
 		return result;
+	}
+	
+	/**
+	* Method that obtains the credentials entered by the user
+	* @param body - credentials sent by the form
+	* @return list with email value and password
+	*/
+	public ArrayList<String> getParams(String body) {
+		ArrayList<String> params = new ArrayList<>();
+	    for (String s : body.split("&")) {
+	        String[] kv = s.split("=");
+	        params.add(kv[1]);
+	    }
+	    return params;
 	}
 }

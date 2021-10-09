@@ -16,7 +16,7 @@ public class ImgServiceImpl {
 	* @return resource of image type
 	*/
 	public String getImage(Request req, Response res) {
-		String image = "/bienvenido.jpg";
+		String image = "<img src=\"https://www.cinepremiere.com.mx/wp-content/uploads/2021/07/Caricaturas-2000s-Destacada-900x506.png\"> ";
 		return image;
 	}
 	
@@ -27,7 +27,7 @@ public class ImgServiceImpl {
 	* @return resource of image type
 	*/
 	public String getSecondImage(Request req, Response res) {
-		String image = "https://www.cinepremiere.com.mx/wp-content/uploads/2021/07/Caricaturas-2000s-Destacada-900x506.png";
+		String image = "<img src=\"https://wolkenmagazine.com/wp-content/uploads/2020/04/Portadas-Blog-Caricaturas_Mesa-de-trabajo-1-780x405.jpg\"> ";
 		return image;
 	}
 }
