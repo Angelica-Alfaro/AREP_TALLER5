@@ -17,8 +17,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
 /**
- * Class that allows access to other services, in this case to the authentication
- *
+ * Class that allows access to other services, in this case to the authentication.
  * @author Angélica
  */
 public class URLReader {
@@ -125,7 +124,7 @@ public class URLReader {
         catch (IOException x) {
             System.err.println(x);
         }
-        return "Invalid credentials!";
+        return "Invalid credentials :(";
     }
 }
 

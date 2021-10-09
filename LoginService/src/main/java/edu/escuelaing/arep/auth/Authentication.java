@@ -6,8 +6,7 @@ import java.util.Map;
 import edu.escuelaing.arep.data.User;
 
 /**
- * Class that handles the authentication of a user to access a resource
- *
+ * Class that handles the authentication of a user to access a resource.
  * @author Angélica
  */
 public class Authentication {

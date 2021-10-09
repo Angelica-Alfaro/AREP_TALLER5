@@ -6,8 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Class that allows to encrypt a user attribute
- *
+ * Class that allows to encrypt a user attribute.
  * @author Angélica
  */
 public class HashEncryption {

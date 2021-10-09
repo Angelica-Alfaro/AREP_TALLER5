@@ -9,8 +9,7 @@ import edu.escuelaing.arep.connection.URLReader;
 import edu.escuelaing.arep.data.User;
 
 /**
- * Class that handles the authorization records of a user
- *
+ * Class that handles the authorization records of a user.
  * @author Angélica
  */
 public class LoginServiceImpl {
@@ -25,18 +24,15 @@ public class LoginServiceImpl {
 	* @param res - HTTP response
 	* @return Denial or access to the service
 	*/
-	public String auth(Request req, Response res) {
-		System.out.println("Auth login :)");
-		
+	public String login(Request req, Response res) {
 		String result = "";
         User user = gson.fromJson(req.body(), User.class);
         if(auth.validCredentials(user)) {
         	result = URLReader.readURL(URL);
 		}
         else {
-			result = "Invalid credentials!";
+			result = "Invalid credentials :(";
 		}
 		return result;
 	}
-
 }
