@@ -11,6 +11,15 @@ Construcción de una aplicación web distribuida segura con dos servicios **Logi
 Cada servicio cuenta con un certificado propio para el acceso seguro a través de **https**. Adicionalmente el **LoginService** cuenta con archivo de confianza que le permite consumir una imagen de **ImgService** para mostrarla al usuario si este se autenticó exitosamente.
 
 ## 🛠️ Arquitectura y diseño detallado de la aplicación
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p align="center">
+          <img src="https://github.com/Angelica-Alfaro/AREP_TALLER5/blob/main/Imgs/Dise%C3%B1o.PNG" width="600"/>
+        </p>
+    </body>
+</html>
 
 El proyecto está compuesto por:
 
