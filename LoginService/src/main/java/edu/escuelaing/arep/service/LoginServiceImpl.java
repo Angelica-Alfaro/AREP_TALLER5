@@ -18,7 +18,8 @@ import edu.escuelaing.arep.data.User;
 public class LoginServiceImpl {
 	
 	private static final Gson gson = new Gson();
-	private final String URL = "https://localhost:4600/img";
+	//private final String URL = "https://localhost:4600/img";
+	private final String URL = "https://ec2-54-167-98-62.compute-1.amazonaws.com:4600/img";
 	private static final Authentication auth = new Authentication();
 
 	/**

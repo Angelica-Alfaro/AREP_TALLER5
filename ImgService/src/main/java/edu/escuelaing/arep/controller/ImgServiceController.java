@@ -15,6 +15,6 @@ public class ImgServiceController {
 	 */
 	public ImgServiceController(ImgServiceImpl myImgServiceImpl) {
 		get("/hello", (req,res) -> "Hello security!");
-		get("/img", (req, res) -> myImgServiceImpl.getSecondImage(req, res));
+		get("/img", (req, res) -> myImgServiceImpl.getImage(req, res));
 	}
 }
