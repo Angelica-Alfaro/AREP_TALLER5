@@ -35,10 +35,47 @@ Puesto que lo realizado es una aplicación web distribuida, implementar nuevos s
 
 ## 📝 Evidencia
 ### Cliente web
-- Usuario con credenciales correctas
-- Usuario con credenciales incorrectas
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p align="center">
+          <img src="https://github.com/Angelica-Alfaro/AREP_TALLER5/blob/main/Imgs/Frontend.PNG"/>
+        </p>
+    </body>
+</html>
+
+### Usuario con credenciales válidas
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p align="center">
+          <img src="https://github.com/Angelica-Alfaro/AREP_TALLER5/blob/main/Imgs/UsuarioValido.PNG" width="600"/>
+        </p>
+    </body>
+</html>
+
+### Usuario con credenciales inválidas
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p align="center">
+          <img src="https://github.com/Angelica-Alfaro/AREP_TALLER5/blob/main/Imgs/UsuarioInvalido.PNG"/>
+        </p>
+    </body>
+</html>
+
 ### Video expermiental
 [Demostración de lo realizado en AWS](https://github.com/Angelica-Alfaro/AREP_TALLER5/blob/main/DemoAppSegura.mp4)
+
+## ✒️ Conceptos utilizados
+- ***Autenticación:*** Es el proceso de identificar a los usuarios y garantizar que los mismos sean quienes dicen ser.
+- ***Autorización:*** Permite validar si un usuario tiene el permiso para acceder a un recurso o realizar alguna acción.
+- ***Integridad:*** Consiste en proteger la información de modificaciones por parte de accesos no autorizados.
+- ***https:***  Tambien conocido como protocolo seguro de transferencia de hipertexto, es un protocolo de comunicación de Internet que protege la integridad y la confidencialidad de los datos de los usuarios entre sus ordenadores y el sitio web.
+- ***Aplicación de 12 factores:*** Es una metodología para construir aplicaciones de software como servicio.
        
 ## 💡 Herramientas utilizadas
 - Maven
