@@ -29,7 +29,7 @@ El proyecto está compuesto por:
        
      📌 ***(GET)*** /hello. Permite verificar que el servicio corre satisfactoriamente.
      
-     📌 ***(POST)*** /login. Recibe las credenciales y las valida con las existentes del usuario autorizado. Si la validación fue exitosa se le aprueba el acceso al otro servicio para consumir el recurso (en este caso, una imagen); de lo contrario se le muestra en pantalla un mensaje de error.
+     📌 ***(POST)*** /login. Recibe las credenciales y las valida con las existentes del usuario autorizado. Si la validación es exitosa se le aprueba el acceso al otro servicio para consumir el recurso (en este caso, una imagen); de lo contrario se le muestra en pantalla un mensaje de error.
 
 - El servicio **ImgService**, que retorna los recursos solicitados por **LoginService**. El servicio corre por el puerto ***4600***.
 
